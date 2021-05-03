@@ -18,6 +18,10 @@ public class FirstPersonLook : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        character.localRotation.ToAngleAxis(out float angleX, out Vector3 axis);
+        currentMouseLook.x = angleX * axis.y;
+        transform.localRotation.ToAngleAxis(out float angleY, out Vector3 axis2);
+        currentMouseLook.y = Mathf.Clamp(angleY, -90, 90);
     }
 
     void Update()
