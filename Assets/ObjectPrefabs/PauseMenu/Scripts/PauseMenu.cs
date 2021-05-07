@@ -6,11 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour {
     public bool IsGamePaused = false;
-    public bool PauseHasChanged = false;
+    //public bool PauseHasChanged = false;
 
     public List<GameObject> disableableObjects;
 
-    // Update is called once per frame
+    // void Awake() {
+    //     Time.timeScale = 1f;
+    //     IsGamePaused = false;
+    //     Cursor.visible = false;
+    //     Cursor.lockState = CursorLockMode.Confined;
+    // }
+
     void Update() {
         if(Input.GetKeyDown(KeyCode.Escape))
             if(IsGamePaused)
@@ -21,7 +27,9 @@ public class PauseMenu : MonoBehaviour {
 
     public void QuitGame() 
     {
-        Resume();
+        Time.timeScale = 1f;
+        IsGamePaused = false;
+        // Resume();
         SceneManager.LoadScene(0, LoadSceneMode.Single);
         //Resume();
     }
@@ -30,8 +38,8 @@ public class PauseMenu : MonoBehaviour {
         foreach(var disableableObject in disableableObjects)
             disableableObject.SetActive(false);
         Time.timeScale = 1f;
-        if (IsGamePaused == true)
-            PauseHasChanged = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 
         IsGamePaused = false;
     }
@@ -40,8 +48,8 @@ public class PauseMenu : MonoBehaviour {
         foreach(var disableableObject in disableableObjects)
             disableableObject.SetActive(true);
         Time.timeScale = 0f;
-        if (IsGamePaused == false)
-            PauseHasChanged = true;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
 
         IsGamePaused = true;
     }

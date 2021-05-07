@@ -15,10 +15,10 @@ public class FirstPersonLook : MonoBehaviour {
     public PauseMenu pauseMenu;
 
 
-    void Reset() {
-        character = GetComponentInParent<FirstPersonMovement>().transform;
-        audioListener = GetComponent<AudioListener>();
-    }
+    // void Reset() {
+    //     character = GetComponentInParent<FirstPersonMovement>().transform;
+    //     audioListener = GetComponent<AudioListener>();
+    // }
 
     void Start() {
         Cursor.lockState = CursorLockMode.Locked;
@@ -29,16 +29,20 @@ public class FirstPersonLook : MonoBehaviour {
     }
 
     void Update() {
-        if (pauseMenu.PauseHasChanged)
+        if (pauseMenu.IsGamePaused)
         {
-            if(pauseMenu.IsGamePaused) {
-                Pause();
-                return;
-            } else if(!pauseMenu.IsGamePaused)
-                Unpause();
+            audioListener.enabled = false;
+            return;
+            // if(pauseMenu.IsGamePaused) {
+            //     Pause();
+            //     return;
+            // } else if(!pauseMenu.IsGamePaused)
+            //     Unpause();
             
-            pauseMenu.PauseHasChanged = false;
+            // pauseMenu.PauseHasChanged = false;
         }
+        else
+            audioListener.enabled = true;
         
 
         // Get smooth mouse look.
@@ -52,10 +56,10 @@ public class FirstPersonLook : MonoBehaviour {
         character.localRotation = Quaternion.AngleAxis(currentMouseLook.x, Vector3.up);
     }
 
-    void OnDestroy()
-    {
-        Cursor.lockState = CursorLockMode.None;
-    }
+    // void OnDestroy()
+    // {
+    //     Cursor.lockState = CursorLockMode.None;
+    // }
 
     void Pause() {
         audioListener.enabled = false;
