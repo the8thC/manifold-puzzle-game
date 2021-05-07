@@ -7,10 +7,12 @@ public class FirstPersonLook : MonoBehaviour {
     AudioListener audioListener;
     Vector2 currentMouseLook;
     Vector2 appliedMouseDelta;
-    bool isUnpaused = true;
+    //bool isUnpaused = true;
     
     public float sensitivity = 1;
     public float smoothing = 2;
+
+    public PauseMenu pauseMenu;
 
 
     void Reset() {
@@ -27,11 +29,17 @@ public class FirstPersonLook : MonoBehaviour {
     }
 
     void Update() {
-        if(PauseMenu.IsGamePaused) {
-            Pause();
-            return;
-        } else if(!isUnpaused)
-            Unpause();
+        if (pauseMenu.PauseHasChanged)
+        {
+            if(pauseMenu.IsGamePaused) {
+                Pause();
+                return;
+            } else if(!pauseMenu.IsGamePaused)
+                Unpause();
+            
+            pauseMenu.PauseHasChanged = false;
+        }
+        
 
         // Get smooth mouse look.
         Vector2 smoothMouseDelta = Vector2.Scale(new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y")), Vector2.one * sensitivity * smoothing);
@@ -44,14 +52,17 @@ public class FirstPersonLook : MonoBehaviour {
         character.localRotation = Quaternion.AngleAxis(currentMouseLook.x, Vector3.up);
     }
 
+    void OnDestroy()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     void Pause() {
         audioListener.enabled = false;
         Cursor.lockState = CursorLockMode.None;
-        isUnpaused = false;
     }
     void Unpause() {
         audioListener.enabled = true;
         Cursor.lockState = CursorLockMode.Locked;
-        isUnpaused = true;
     }
 }
