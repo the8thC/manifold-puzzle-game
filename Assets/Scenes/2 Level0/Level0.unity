@@ -1302,15 +1302,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3215418022840877764, guid: 01d8f4e7f2445db4e8524d62f2cb34ff, type: 3}
       propertyPath: m_Name
-      value: Load0
+      value: LoadButton0
       objectReference: {fileID: 0}
     - target: {fileID: 4821731607253060141, guid: 01d8f4e7f2445db4e8524d62f2cb34ff, type: 3}
       propertyPath: m_Name
-      value: Load2
+      value: LoadButton2
       objectReference: {fileID: 0}
     - target: {fileID: 4906064758736382126, guid: 01d8f4e7f2445db4e8524d62f2cb34ff, type: 3}
       propertyPath: m_Name
-      value: Save0
+      value: SaveButton0
       objectReference: {fileID: 0}
     - target: {fileID: 5273927036173360206, guid: 01d8f4e7f2445db4e8524d62f2cb34ff, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1450,7 +1450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9020976221898797992, guid: 01d8f4e7f2445db4e8524d62f2cb34ff, type: 3}
       propertyPath: m_Name
-      value: Load1
+      value: LoadButton1
       objectReference: {fileID: 0}
     - target: {fileID: 9101044731412461270, guid: 01d8f4e7f2445db4e8524d62f2cb34ff, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

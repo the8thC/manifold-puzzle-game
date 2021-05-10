@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EyeVisibility : MonoBehaviour
-{
+public class EyeVisibility : MonoBehaviour {
     [SerializeField]
     GateAnimated gate;
 

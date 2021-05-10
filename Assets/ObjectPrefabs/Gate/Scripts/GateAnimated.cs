@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GateAnimated : MonoBehaviour
-{
+public class GateAnimated : MonoBehaviour {
     Animator animator;
 
     void Awake() {
