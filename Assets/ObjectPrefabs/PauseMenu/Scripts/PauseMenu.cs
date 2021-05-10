@@ -2,13 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour {
-    public static bool IsGamePaused = false;
+    public bool IsGamePaused = false;
 
     public List<GameObject> disableableObjects;
 
-    // Update is called once per frame
     void Update() {
         if(Input.GetKeyDown(KeyCode.Escape))
             if(IsGamePaused)
@@ -17,19 +17,31 @@ public class PauseMenu : MonoBehaviour {
                 Pause();
     }
 
-    public void QuitGame() {
-        Application.Quit();
+    public void QuitGame() 
+    {
+        Time.timeScale = 1f;
+        IsGamePaused = false;
+
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
+
     public void Resume() {
         foreach(var disableableObject in disableableObjects)
             disableableObject.SetActive(false);
+
         Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
+
         IsGamePaused = false;
     }
+
     void Pause() {
         foreach(var disableableObject in disableableObjects)
             disableableObject.SetActive(true);
+
         Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.None;
+        
         IsGamePaused = true;
     }
 }
