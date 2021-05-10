@@ -439,6 +439,7 @@ MonoBehaviour:
   audioListener: {fileID: 81448068208000304}
   sensitivity: 1
   smoothing: 2
+  pauseMenu: {fileID: 0}
 --- !u!114 &114103969153859672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -470,8 +471,8 @@ GameObject:
   - component: {fileID: 114497868231759342}
   - component: {fileID: 114762042097486276}
   m_Layer: 0
-  m_Name: First person controller full
-  m_TagString: Untagged
+  m_Name: FirstPersonController
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

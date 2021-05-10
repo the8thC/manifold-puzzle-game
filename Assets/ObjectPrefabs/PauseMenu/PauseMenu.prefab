@@ -152,16 +152,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Play
-        m_Mode: 1
+      - m_Target: {fileID: 6571295132607530918}
+        m_TargetAssemblyTypeName: SaveLoadScript, Assembly-CSharp
+        m_MethodName: SaveScript
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Save2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &492088952150872906
@@ -1569,7 +1569,7 @@ GameObject:
   - component: {fileID: 8576867366959286459}
   - component: {fileID: 838536974329779805}
   m_Layer: 5
-  m_Name: Save0Button
+  m_Name: Load0Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1677,16 +1677,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Play
-        m_Mode: 1
+      - m_Target: {fileID: 6571295132607530918}
+        m_TargetAssemblyTypeName: SaveLoadScript, Assembly-CSharp
+        m_MethodName: LoadScript
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Save0
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3607530612805745515
@@ -2238,7 +2238,7 @@ GameObject:
   - component: {fileID: 1467450878941901758}
   - component: {fileID: 1851148399143189898}
   m_Layer: 5
-  m_Name: Save2Button
+  m_Name: Load2Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2346,16 +2346,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Play
-        m_Mode: 1
+      - m_Target: {fileID: 6571295132607530918}
+        m_TargetAssemblyTypeName: SaveLoadScript, Assembly-CSharp
+        m_MethodName: LoadScript
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Save2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &4906064758736382126
@@ -2479,16 +2479,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Play
-        m_Mode: 1
+      - m_Target: {fileID: 6571295132607530918}
+        m_TargetAssemblyTypeName: SaveLoadScript, Assembly-CSharp
+        m_MethodName: SaveScript
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Save0
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5536445508751776399
@@ -3185,6 +3185,7 @@ GameObject:
   - component: {fileID: 7600424145373630941}
   - component: {fileID: 6890504770217771461}
   - component: {fileID: 2293695489953056747}
+  - component: {fileID: 6571295132607530918}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3285,8 +3286,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275bc384645a2f34e954db46f8984129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsGamePaused: 0
   disableableObjects:
   - {fileID: 1214484776253253905}
+--- !u!114 &6571295132607530918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7328587654970468812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f06977ee2c5c05c4f9179d0356271460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7381420288489299905
 GameObject:
   m_ObjectHideFlags: 0
@@ -3593,16 +3607,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Play
-        m_Mode: 1
+      - m_Target: {fileID: 6571295132607530918}
+        m_TargetAssemblyTypeName: SaveLoadScript, Assembly-CSharp
+        m_MethodName: SaveScript
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Save1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &8255429314313648127
@@ -3792,7 +3806,7 @@ GameObject:
   - component: {fileID: 2544018123654729164}
   - component: {fileID: 1031744729847257043}
   m_Layer: 5
-  m_Name: Save1Button
+  m_Name: Load1Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3900,15 +3914,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Play
-        m_Mode: 1
+      - m_Target: {fileID: 6571295132607530918}
+        m_TargetAssemblyTypeName: SaveLoadScript, Assembly-CSharp
+        m_MethodName: LoadScript
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Save1
           m_BoolArgument: 0
         m_CallState: 2
