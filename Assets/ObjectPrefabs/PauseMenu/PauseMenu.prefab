@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6221278364443995890}
   - component: {fileID: 9101044731412461270}
   m_Layer: 5
-  m_Name: Save2
+  m_Name: Save2Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1302,7 +1302,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: level 01 01:43:23
+  m_text: level 01 00:10:23
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -2156,7 +2156,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: level 01 01:43:23
+  m_text: level 01 00:10:23
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -2238,7 +2238,7 @@ GameObject:
   - component: {fileID: 1467450878941901758}
   - component: {fileID: 1851148399143189898}
   m_Layer: 5
-  m_Name: Save2
+  m_Name: Save2Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3485,7 +3485,7 @@ GameObject:
   - component: {fileID: 5099957367130191909}
   - component: {fileID: 5273927036173360206}
   m_Layer: 5
-  m_Name: Save1
+  m_Name: Save1Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3792,7 +3792,7 @@ GameObject:
   - component: {fileID: 2544018123654729164}
   - component: {fileID: 1031744729847257043}
   m_Layer: 5
-  m_Name: Save1
+  m_Name: Save1Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
