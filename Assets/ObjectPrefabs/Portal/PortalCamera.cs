@@ -15,12 +15,11 @@ public class PortalCamera : MonoBehaviour {
 
     void Update() {
         float portalsAgnleDiff = Quaternion.Angle(portal.rotation, otherPortal.rotation);
-        var playerAndPortalAngleDiff = Quaternion.Angle(otherPortal.rotation, player.transform.rotation) + portalsAgnleDiff;
-        var playerOffsetDelta = (playerCamera.transform.position - otherPortal.position);
-
-        transform.position = portal.position - (Quaternion.AngleAxis(playerAndPortalAngleDiff, Vector3.up) * playerOffsetDelta).normalized * playerOffsetDelta.magnitude;
-
         Quaternion portalsRotationDiff = Quaternion.AngleAxis(portalsAgnleDiff, Vector3.up);
+        var playerOffsetDelta = portalsRotationDiff * (playerCamera.transform.position - otherPortal.position);
+
+        transform.position = portal.transform.position + playerOffsetDelta;
+
         Vector3 newCameraDirection = portalsRotationDiff * playerCamera.transform.forward;
         transform.rotation = Quaternion.LookRotation(newCameraDirection, Vector3.up);
     }
