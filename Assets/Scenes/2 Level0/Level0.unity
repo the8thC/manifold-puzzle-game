@@ -1309,7 +1309,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6528805498232889722, guid: 771e1aea3c2796a439e35b8f716b7298, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: 9178654238516694116, guid: 771e1aea3c2796a439e35b8f716b7298, type: 3}
       propertyPath: player
@@ -2392,8 +2392,16 @@ PrefabInstance:
       value: Portal B
       objectReference: {fileID: 0}
     - target: {fileID: 6744602530972344427, guid: 8345eae9d2a35754e896852be877d305, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 9.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6744602530972344427, guid: 8345eae9d2a35754e896852be877d305, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 9.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6744602530972344427, guid: 8345eae9d2a35754e896852be877d305, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 6806782679588738256, guid: 8345eae9d2a35754e896852be877d305, type: 3}
       propertyPath: m_RootOrder

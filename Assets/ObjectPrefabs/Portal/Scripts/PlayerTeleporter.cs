@@ -14,19 +14,10 @@ public class PlayerTeleporter : MonoBehaviour {
             return;
 
         Vector3 portalToPlayer = player.position - transform.position;
-        //Vector3 portalToPlayerYless = new Vector3(portalToPlayer.x, 0, portalToPlayer.z);
-        //var yQuaternion = Quaternion.Euler(0, transform.eulerAngles.y, 0);
-        //float dotProduct = Vector3.Dot(transform.TransformDirection(Vector3.forward), portalToPlayer);
-        float dotProduct = Vector3.Dot(transform.forward, portalToPlayer);
-        //float angleBetweenPortalUpAndPlayer = Vector3.Angle(portalToPlayer, transform.up);
-        //if(player.eulerAngles.y - transform.eulerAngles.y > 0)
-        //    return;
-        //var dotLookAndUp = Vector3.Dot(transform.up, yQuaternion * transform.forward);
+        var dotProduct = Vector3.Dot(transform.up, portalToPlayer);
         if(dotProduct >= 0)
             return;
-        //float rotationDiff = Quaternion.Angle(transform.rotation, reciever.rotation);
         float rotationDiff = reciever.eulerAngles.y - transform.eulerAngles.y;
-        //rotationDiff += 180;
         player.Rotate(Vector3.up, rotationDiff);
 
         Vector3 positionOffset = Quaternion.Euler(0, rotationDiff, 0) * portalToPlayer;
