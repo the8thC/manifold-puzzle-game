@@ -22,8 +22,9 @@ public class FirstPersonLook : MonoBehaviour {
 
     void Start() {
         Cursor.lockState = CursorLockMode.Locked;
-        character.localRotation.ToAngleAxis(out float angleX, out Vector3 axis);
-        currentMouseLook.x = angleX * axis.y;
+        //character.localRotation.ToAngleAxis(out float angleX, out Vector3 axis);
+        //currentMouseLook.x = angleX * axis.y;
+        currentMouseLook.x = character.eulerAngles.y;
         transform.localRotation.ToAngleAxis(out float angleY, out Vector3 axis2);
         currentMouseLook.y = Mathf.Clamp(angleY, -90, 90);
     }
@@ -43,9 +44,15 @@ public class FirstPersonLook : MonoBehaviour {
         }
         else
             audioListener.enabled = true;
-        
+
 
         // Get smooth mouse look.
+        //character.localRotation(out float angleX, out Vector3 axis);
+        //currentMouseLook.x = angleX * axis.y;
+        currentMouseLook.x = character.eulerAngles.y;
+        //transform.localRotation.ToAngleAxis(out float angleY, out Vector3 axis2);
+        //currentMouseLook.y = Mathf.Clamp(angleY, -90, 90);
+
         Vector2 smoothMouseDelta = Vector2.Scale(new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y")), Vector2.one * sensitivity * smoothing);
         appliedMouseDelta = Vector2.Lerp(appliedMouseDelta, smoothMouseDelta, 1 / smoothing);
         currentMouseLook += appliedMouseDelta;
