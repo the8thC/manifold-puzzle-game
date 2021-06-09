@@ -28,7 +28,7 @@ public class PlayerTeleporter : MonoBehaviour {
 
     void OnTriggerEnter(Collider other) {
         if(other.tag == "Player")
-            playerIsOverlapping = true;            
+            playerIsOverlapping = true;
     }
     void OnTriggerExit(Collider other) {
         if(other.tag == "Player")

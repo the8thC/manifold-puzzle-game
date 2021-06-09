@@ -1243,10 +1243,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1828974294}
     m_Modifications:
+    - target: {fileID: 741195039739824076, guid: 771e1aea3c2796a439e35b8f716b7298, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8ef592a6421ee4e478d9420c2fe42108, type: 2}
     - target: {fileID: 759134282968703777, guid: 771e1aea3c2796a439e35b8f716b7298, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2404758081967443174, guid: 771e1aea3c2796a439e35b8f716b7298, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 10806825}
+    - target: {fileID: 2404758081967443174, guid: 771e1aea3c2796a439e35b8f716b7298, type: 3}
+      propertyPath: otherPortal
+      value: 
+      objectReference: {fileID: 441938641}
     - target: {fileID: 4091962325451774067, guid: 771e1aea3c2796a439e35b8f716b7298, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.12
@@ -1694,6 +1706,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032822653}
   m_CullTransparentMesh: 1
+--- !u!20 &1111074901 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 3477833654676254709, guid: 771e1aea3c2796a439e35b8f716b7298, type: 3}
+  m_PrefabInstance: {fileID: 801860604}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1232393991
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,6 +2376,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1482234279746073062, guid: 8345eae9d2a35754e896852be877d305, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 90ab3ff65e36cf849bb247dd6c676359, type: 2}
     - target: {fileID: 2061577191563513618, guid: 8345eae9d2a35754e896852be877d305, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.7071068
@@ -2367,6 +2388,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 2149161419125404844, guid: 8345eae9d2a35754e896852be877d305, type: 3}
+      propertyPath: cameraA
+      value: 
+      objectReference: {fileID: 1111074901}
+    - target: {fileID: 2149161419125404844, guid: 8345eae9d2a35754e896852be877d305, type: 3}
+      propertyPath: cameraAMat
+      value: 
+      objectReference: {fileID: 2100000, guid: 90ab3ff65e36cf849bb247dd6c676359, type: 2}
     - target: {fileID: 2239962680139240513, guid: 8345eae9d2a35754e896852be877d305, type: 3}
       propertyPath: player
       value: 
