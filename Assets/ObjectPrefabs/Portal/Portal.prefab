@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7641233911353298136}
   - component: {fileID: 9178654238516694116}
   m_Layer: 0
-  m_Name: ColliderPlaneA
+  m_Name: ColliderPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759134282968703777}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 9.6, y: 0, z: 9.6}
   m_Children: []
   m_Father: {fileID: 4373340331756983963}
@@ -58,6 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  sender: {fileID: 4373340331756983963}
   reciever: {fileID: 0}
 --- !u!1 &4071681217636344742
 GameObject:
@@ -71,7 +72,7 @@ GameObject:
   - component: {fileID: 3477833654676254709}
   - component: {fileID: 2404758081967443174}
   m_Layer: 0
-  m_Name: PortalCameraA
+  m_Name: PortalCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   portal: {fileID: 4373340331756983963}
-  otherPortal: {fileID: 6806782679588738256, guid: 8345eae9d2a35754e896852be877d305, type: 3}
+  otherPortal: {fileID: 0}
 --- !u!1 &5157710453685841124
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,6 +161,7 @@ GameObject:
   - component: {fileID: 4091962325451774067}
   - component: {fileID: 6047637226339493078}
   - component: {fileID: 741195039739824076}
+  - component: {fileID: 3484815596533331502}
   m_Layer: 0
   m_Name: RenderPlane
   m_TagString: Untagged
@@ -207,8 +209,7 @@ MeshRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 8ef592a6421ee4e478d9420c2fe42108, type: 2}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -230,6 +231,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3484815596533331502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5157710453685841124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d97e406c2863c149b28037bacd0b032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 0}
+  shader: {fileID: 4800000, guid: d208b91306fe8334082ab7792bac9a0a, type: 3}
 --- !u!1 &5472692078434889205
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,7 +255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4373340331756983963}
   m_Layer: 0
-  m_Name: Portal A
+  m_Name: Portal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

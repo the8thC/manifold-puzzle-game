@@ -18,6 +18,7 @@ public class PlayerTeleporter : MonoBehaviour {
         if(dotProduct >= 0)
             return;
         float rotationDiff = reciever.eulerAngles.y - transform.eulerAngles.y;
+        rotationDiff += 180;
         player.Rotate(Vector3.up, rotationDiff);
 
         Vector3 positionOffset = Quaternion.Euler(0, rotationDiff, 0) * portalToPlayer;

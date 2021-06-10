@@ -3,21 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PortalTextureSetup : MonoBehaviour {
-    public Camera cameraA;
-    public Camera cameraB;
-    public Material cameraAMat;
-    public Material cameraBMat;
-
+    public Camera Camera;
+    public Shader shader;
 
     void Start() {
-        if(cameraA.targetTexture != null)
-            cameraA.targetTexture.Release();
-        cameraA.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
-        cameraAMat.mainTexture = cameraA.targetTexture;
+        if(Camera.targetTexture != null)
+            Camera.targetTexture.Release();
+        Camera.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
 
-        if(cameraB.targetTexture != null)
-            cameraB.targetTexture.Release();
-        cameraB.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
-        cameraBMat.mainTexture = cameraB.targetTexture;
+        var cameraMaterial = new Material(shader);
+        cameraMaterial.mainTexture = Camera.targetTexture;
+
+        MeshRenderer meshRenderer = this.gameObject.GetComponent<MeshRenderer>();
+        meshRenderer.material = cameraMaterial;
     }
 }
