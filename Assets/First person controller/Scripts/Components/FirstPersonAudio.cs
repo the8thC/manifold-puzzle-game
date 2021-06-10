@@ -104,7 +104,7 @@ public class FirstPersonAudio : MonoBehaviour
             audioToPlay.Play();
         foreach (var audio in audiosToPause)
             if (audio)
-                audio.Pause();
+                audio.Stop();
     }
 
     void PlayLandingAudio() => PlayRandomClip(landingAudio, landingSFX);
