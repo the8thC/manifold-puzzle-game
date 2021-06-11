@@ -14,7 +14,8 @@ public class PortalCamera : MonoBehaviour {
     }
 
     void Update() {
-        float portalsAgnleDiff = portal.eulerAngles.y - otherPortal.eulerAngles.y;
+        float portalsAgnleDiff = Quaternion.Angle(portal.rotation, otherPortal.rotation);
+        //portalsAgnleDiff += 180;
         Quaternion portalsRotationDiff = Quaternion.AngleAxis(portalsAgnleDiff, Vector3.up);
         var playerOffsetDelta = portalsRotationDiff * (playerCamera.transform.position - otherPortal.position);
 
