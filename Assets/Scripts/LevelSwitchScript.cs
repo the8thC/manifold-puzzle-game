@@ -7,6 +7,7 @@ public class LevelSwitchScript : MonoBehaviour {
     void OnTriggerEnter(Collider other) {
         if(other.tag != "Player")
             return;
+        //DontDestroyOnLoad(other);
         CommonSceneData.SwitchingLevels = true;
         CommonSceneData.PlayerRotation = PlayerRotationUtils.GetRotation(other.gameObject);
         var previousTimeScale = Time.timeScale;

@@ -8,6 +8,11 @@ public class PlayerTeleporter : MonoBehaviour {
     public Transform player;
     public Transform reciever;
 
+    void Start() {
+        if(player != null)
+            return;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
     // Update is called once per frame
     void Update() {
         if(!playerIsOverlapping)

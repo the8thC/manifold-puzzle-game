@@ -10,6 +10,8 @@ public class PortalCamera : MonoBehaviour {
     public Transform otherPortal;
 
     void Start() {
+        if(player == null)
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonMovement>();
         playerCamera = player.GetComponentInChildren<FirstPersonLook>().transform;
     }
 
