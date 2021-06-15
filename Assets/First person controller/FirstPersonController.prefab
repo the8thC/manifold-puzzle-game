@@ -538,6 +538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  mainCamera: {fileID: 114657890492222300}
   canRun: 1
   runSpeed: 9
   runningKey: 304

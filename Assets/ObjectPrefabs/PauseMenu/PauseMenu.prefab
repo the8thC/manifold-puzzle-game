@@ -164,6 +164,18 @@ MonoBehaviour:
           m_StringArgument: Save2
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1260237636890500545}
+        m_TargetAssemblyTypeName: OnEnableDataLoader, Assembly-CSharp
+        m_MethodName: LoadTextData
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &492088952150872906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,7 +1180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: empty
+  m_text: Empty
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -1195,8 +1207,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -1302,7 +1314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: level 01 00:10:23
+  m_text: Empty
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -1329,8 +1341,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -1380,6 +1392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4925639935363979702}
+  - component: {fileID: 1260237636890500545}
   m_Layer: 5
   m_Name: SaveMenu
   m_TagString: Untagged
@@ -1411,6 +1424,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1260237636890500545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2885753288698781747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6303eb4d5b20ccf4f811eff1ee99a5ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button0: {fileID: 3152105278900443579}
+  button1: {fileID: 5273927036173360206}
+  button2: {fileID: 9101044731412461270}
+  saverLoader: {fileID: 6571295132607530918}
 --- !u!1 &3190442135991657587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1689,6 +1718,18 @@ MonoBehaviour:
           m_StringArgument: Save0
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6589430868428226587}
+        m_TargetAssemblyTypeName: OnEnableDataLoader, Assembly-CSharp
+        m_MethodName: LoadTextData
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3607530612805745515
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,8 +1956,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -2156,7 +2197,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: level 01 00:10:23
+  m_text: Empty
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -2183,8 +2224,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -2358,6 +2399,18 @@ MonoBehaviour:
           m_StringArgument: Save2
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6589430868428226587}
+        m_TargetAssemblyTypeName: OnEnableDataLoader, Assembly-CSharp
+        m_MethodName: LoadTextData
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4906064758736382126
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,6 +2542,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Save0
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1260237636890500545}
+        m_TargetAssemblyTypeName: OnEnableDataLoader, Assembly-CSharp
+        m_MethodName: LoadTextData
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5536445508751776399
@@ -2717,8 +2782,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -3103,7 +3168,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: empty
+  m_text: Empty
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -3130,8 +3195,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -3619,6 +3684,18 @@ MonoBehaviour:
           m_StringArgument: Save1
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1260237636890500545}
+        m_TargetAssemblyTypeName: OnEnableDataLoader, Assembly-CSharp
+        m_MethodName: LoadTextData
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8255429314313648127
 GameObject:
   m_ObjectHideFlags: 0
@@ -3628,6 +3705,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3635361926837201553}
+  - component: {fileID: 6589430868428226587}
   m_Layer: 5
   m_Name: LoadMenu
   m_TagString: Untagged
@@ -3659,6 +3737,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6589430868428226587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8255429314313648127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6303eb4d5b20ccf4f811eff1ee99a5ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button0: {fileID: 838536974329779805}
+  button1: {fileID: 1031744729847257043}
+  button2: {fileID: 1851148399143189898}
+  saverLoader: {fileID: 6571295132607530918}
 --- !u!1 &8869616953053996528
 GameObject:
   m_ObjectHideFlags: 0
@@ -3924,5 +4018,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Save1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6589430868428226587}
+        m_TargetAssemblyTypeName: OnEnableDataLoader, Assembly-CSharp
+        m_MethodName: LoadTextData
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2

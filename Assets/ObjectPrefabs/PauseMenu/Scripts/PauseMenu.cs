@@ -9,6 +9,10 @@ public class PauseMenu : MonoBehaviour {
 
     public List<GameObject> disableableObjects;
 
+    void Start() {
+        Time.timeScale = 1f;
+    }
+
     void Update() {
         if(Input.GetKeyDown(KeyCode.Escape))
             if(IsGamePaused)

@@ -5,6 +5,7 @@ public class FirstPersonMovement : MonoBehaviour {
     public float speed = 5;
     Vector2 velocity;
 
+    public FirstPersonLook mainCamera;
     [Header("Running")]
     public bool canRun = true;
     public bool IsRunning { get; private set; }
@@ -14,10 +15,10 @@ public class FirstPersonMovement : MonoBehaviour {
     public List<System.Func<float>> speedOverrides = new List<System.Func<float>>();
 
     void Start() {
-        if(!CommonSceneData.SwitchingLevels)
-            return;
-        PlayerRotationUtils.SetRotation(this.gameObject, CommonSceneData.PlayerRotation);
-        CommonSceneData.SwitchingLevels = false;
+        if(CommonSceneData.SwitchingLevels) {
+            PlayerRotationUtils.SetRotation(this.gameObject, CommonSceneData.PlayerRotation);
+            CommonSceneData.SwitchingLevels = false;
+        }
     }
     void FixedUpdate() {
         // Move.
