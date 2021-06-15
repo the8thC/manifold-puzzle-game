@@ -1718,18 +1718,6 @@ MonoBehaviour:
           m_StringArgument: Save0
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6589430868428226587}
-        m_TargetAssemblyTypeName: OnEnableDataLoader, Assembly-CSharp
-        m_MethodName: LoadTextData
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &3607530612805745515
 GameObject:
   m_ObjectHideFlags: 0
@@ -2397,18 +2385,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Save2
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6589430868428226587}
-        m_TargetAssemblyTypeName: OnEnableDataLoader, Assembly-CSharp
-        m_MethodName: LoadTextData
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &4906064758736382126
@@ -4018,17 +3994,5 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Save1
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6589430868428226587}
-        m_TargetAssemblyTypeName: OnEnableDataLoader, Assembly-CSharp
-        m_MethodName: LoadTextData
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2

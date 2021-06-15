@@ -45,8 +45,8 @@ public class SaveLoadScript : MonoBehaviour {
             if(switchScenes) {
                 SetupPlayerAndCamera();
                 CommonSceneData.LoadingGame = true;
-                CommonSceneData.PlayerPosition = player.transform.position;
-                CommonSceneData.PlayerRotation = new Vector2(cameraTransform.localRotation.eulerAngles.x, player.transform.localRotation.eulerAngles.y);
+                CommonSceneData.PlayerPosition = new Vector3(data.PositionX, data.PositionY, data.PositionZ);
+                CommonSceneData.PlayerRotation = new Vector2(data.RotationX, data.RotationY);
                 CommonSceneData.PreviousPlaytime = new TimeSpan(data.PlaytimeHours, data.PlaytimeMinutes, data.PlaytimeSeconds);
 
                 SceneManager.LoadScene(data.SceneIndex, LoadSceneMode.Single);
