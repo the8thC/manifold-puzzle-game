@@ -1,10 +1,7 @@
 using System;
-using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-using System.Collections;
-using System.Collections.Generic;
+using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class SaveLoadScript : MonoBehaviour {
